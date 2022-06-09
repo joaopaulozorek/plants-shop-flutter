@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/filter_text_item.dart';
+import '../widgets/normal_card_item.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -46,11 +47,11 @@ class _HomePageState extends State<HomePage> {
               scrollDirection: Axis.horizontal,
               children: const [
                 FilterTextItemWidget(text: 'All', selected: true),
-                FilterTextItemWidget(text: 'Succulents', selected: true),
-                FilterTextItemWidget(text: 'Palm trees', selected: true),
-                FilterTextItemWidget(text: 'Cactus', selected: true),
-                FilterTextItemWidget(text: 'Roses', selected: true),
-                FilterTextItemWidget(text: 'Jacks', selected: true),
+                FilterTextItemWidget(text: 'Succulents', selected: false),
+                FilterTextItemWidget(text: 'Palm trees', selected: false),
+                FilterTextItemWidget(text: 'Cactus', selected: false),
+                FilterTextItemWidget(text: 'Roses', selected: false),
+                FilterTextItemWidget(text: 'Jacks', selected: false),
               ],
             ),
           ),
@@ -62,6 +63,22 @@ class _HomePageState extends State<HomePage> {
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.black87),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 16.0, left: 16.0),
+            child: Container(
+              height: 220,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  NormalCardItemWidget(),
+                  SizedBox(width: 16),
+                  NormalCardItemWidget(),
+                  SizedBox(width: 16),
+                  NormalCardItemWidget(),
+                ],
+              ),
             ),
           ),
         ],
