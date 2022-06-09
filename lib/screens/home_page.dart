@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/filter_text_item.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -42,63 +44,18 @@ class _HomePageState extends State<HomePage> {
             color: Colors.white,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: [
-                TextButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'All',
-                    style: TextStyle(
-                      color: Colors.black54,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 15,
-                    ),
-                  ),
-                ),
-                TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      'Succulents',
-                      style: TextStyle(
-                        fontSize: 15,
-                      ),
-                    )),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Palm trees',
-                      style: TextStyle(
-                        fontSize: 15,
-                      ),
-                    )),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Cactus',
-                      style: TextStyle(
-                        fontSize: 15,
-                      ),
-                    )),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Roses',
-                      style: TextStyle(
-                        fontSize: 15,
-                      ),
-                    )),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Jacks',
-                      style: TextStyle(
-                        fontSize: 15,
-                      ),
-                    )),
+              children: const [
+                FilterTextItemWidget(text: 'All', selected: true),
+                FilterTextItemWidget(text: 'Succulents', selected: true),
+                FilterTextItemWidget(text: 'Palm trees', selected: true),
+                FilterTextItemWidget(text: 'Cactus', selected: true),
+                FilterTextItemWidget(text: 'Roses', selected: true),
+                FilterTextItemWidget(text: 'Jacks', selected: true),
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 20, left: 20),
+          const Padding(
+            padding: EdgeInsets.only(top: 20, left: 20),
             child: Text(
               'Popular',
               style: TextStyle(
