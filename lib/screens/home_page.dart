@@ -67,18 +67,35 @@ class _HomePageState extends State<HomePage> {
           ),
           Padding(
             padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-            child: Container(
+            child: SizedBox(
               height: 220,
               child: ListView(
                 scrollDirection: Axis.horizontal,
-                children: [
-                  NormalCardItemWidget(),
-                  SizedBox(width: 16),
-                  NormalCardItemWidget(),
-                  SizedBox(width: 16),
-                  NormalCardItemWidget(),
+                children: const [
+                  NormalCardItemWidget(
+                    plant_name: 'Pilea',
+                    price: '\$ 30',
+                  ),
+                  NormalCardItemWidget(
+                    plant_name: 'Orquidea',
+                    price: '\$ 40',
+                  ),
+                  NormalCardItemWidget(
+                    plant_name: 'Epiphyllum',
+                    price: '\$ 25',
+                  ),
                 ],
               ),
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(top: 20, left: 20),
+            child: Text(
+              'Special offer',
+              style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black87),
             ),
           ),
         ],
