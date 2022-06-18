@@ -1,16 +1,23 @@
-# plants_shop
+# Plants Shop
 
-A plant shop app layout in Flutter
+Uma interface de usuário de um app de comércio eletrônico de plantas feito em Flutter.
+Meu objetivo com este projeto foi estudar componentes de layout em Flutter, usei widgets nativos e também criei meus próprios widgets.
+Este projeto tem como base o layout desenvolvido por [Evgenia](https://dribbble.com/shots/18428713-Plants-shop-app), e não tem quaisquer fins comerciais.
 
-## Getting Started
+## Capturas de Tela
 
-This project is a starting point for a Flutter application.
+<p>
+<img width="200" src="https://github.com/joaopaulozorek/plants-shop-flutter/raw/main/images/Screenshot_1.png">
+<img width="200" src="https://github.com/joaopaulozorek/plants-shop-flutter/raw/main/images/Screenshot_2.png">
+<img width="200" src="https://github.com/joaopaulozorek/plants-shop-flutter/raw/main/images/Screenshot_3.png">
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## Faça Contato 🛸
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+João Paulo Zorek
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Pelo LinkedIn: [João Paulo Zorek](https://www.linkedin.com/in/joaopaulozorek/)
+Pelo Instagram: [@joaopaulozorek](https://instagram.com/joaopaulozorek)
+Ou por e-mail: joaopaulozorek@gmail.com
+
+Espero seu Olá! 👽
