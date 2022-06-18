@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'Plants Shop',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.grey,
+        useMaterial3: true,
+        primarySwatch: Colors.green,
       ),
       home: const HomePage(),
     );

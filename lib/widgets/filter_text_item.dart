@@ -20,7 +20,10 @@ class FilterTextItemWidget extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   fontSize: 15,
                 )
-              : const TextStyle(fontSize: 15)),
+              : const TextStyle(
+                  fontSize: 15,
+                  color: Colors.grey,
+                )),
     );
   }
 }

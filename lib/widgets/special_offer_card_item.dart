@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
-class NormalCardItemWidget extends StatelessWidget {
+class SpecialOfferCardItemWidget extends StatelessWidget {
   final String plantName;
   final String price;
+  final String oldPrice;
 
-  const NormalCardItemWidget({
+  const SpecialOfferCardItemWidget({
     Key? key,
     required this.plantName,
     required this.price,
+    required this.oldPrice,
   }) : super(key: key);
 
   @override
@@ -37,7 +39,7 @@ class NormalCardItemWidget extends StatelessWidget {
             height: 110,
             width: 136,
             decoration: const BoxDecoration(
-              color: Colors.green,
+              color: Colors.greenAccent,
               borderRadius: BorderRadius.vertical(
                 top: Radius.circular(20),
                 bottom: Radius.circular(0),
@@ -45,7 +47,7 @@ class NormalCardItemWidget extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 8.0, left: 8.0, bottom: 0),
+            padding: const EdgeInsets.only(top: 8.0, left: 8.0),
             child: Text(
               plantName,
               style: const TextStyle(
@@ -54,7 +56,7 @@ class NormalCardItemWidget extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 16.0, right: 10.0, bottom: 5),
+            padding: const EdgeInsets.only(left: 16.0, right: 16.0, top: 20),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -65,14 +67,12 @@ class NormalCardItemWidget extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
-                FloatingActionButton.small(
-                  backgroundColor: Colors.green[800],
-                  shape: ContinuousRectangleBorder(
-                      borderRadius: BorderRadius.circular(20)),
-                  onPressed: () {},
-                  child: const Icon(
-                    Icons.shopping_cart_outlined,
-                    color: Colors.white,
+                Text(
+                  oldPrice,
+                  style: const TextStyle(
+                    color: Colors.grey,
+                    fontSize: 18,
+                    decoration: TextDecoration.lineThrough,
                   ),
                 ),
               ],
